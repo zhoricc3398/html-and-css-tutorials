@@ -1,5 +1,5 @@
-.title {
-    font-size: 24px;
-    color: blue;
+#headerTitle {
+    font-size: 20px;
+    color: red;
     text-align: center;
 }
