@@ -1,6 +1,11 @@
-.example {
-    display: inline-block;
-    background-color: blue;
-    width: 100px;
-    height: 100px;
+.myTable {
+    display: table;
+}
+
+.myTable .myTr {
+    display: table-row;
+}
+
+.myTable .myTr .myTd {
+    display: table-cell;
 }
