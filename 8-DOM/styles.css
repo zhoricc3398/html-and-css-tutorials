@@ -1,11 +1,6 @@
-* {
-    box-sizing: border-box;
-}
-
 .example {
-    width: 200px;
-    height: 200px;
-    padding: 10px;
-    border: 5px solid green;
-    margin: 20px;
+    display: inline-block;
+    background-color: blue;
+    width: 100px;
+    height: 100px;
 }
