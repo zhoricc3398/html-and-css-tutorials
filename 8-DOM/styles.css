@@ -1,6 +1,12 @@
-a {
+nav a {
     display: block;
+    background: red;
     padding: 10px;
     height: 100px;
     width: 30px;
+    margin-bottom: 10px;
+}
+
+nav a:last-child {
+    margin-bottom: 0;
 }
