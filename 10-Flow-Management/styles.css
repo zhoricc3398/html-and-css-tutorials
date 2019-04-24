@@ -13,20 +13,16 @@ main div, header, footer {
     background: blue;
 }
 
-.col-1 {
+.cell {
     float: left;
+    width: 180px;
+    margin-right: 30px;
 }
 
-.col-2 {
-    float: right;
-}
-
-.col-3 {
-    margin: 0 auto 30px;
+footer {
     clear: both;
-    width: 400px;
 }
 
-.col-1, .col-2 {
-    width: 285px;
+.cell:last-of-type {
+    margin-right: 0;
 }
