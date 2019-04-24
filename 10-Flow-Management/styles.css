@@ -3,26 +3,31 @@ main {
     margin: auto;
 }
 
-header, footer {
+.row {
+    clear: both;
     width: 100%;
-}
-
-main div, header, footer {
-    height: 150px;
-    margin-bottom: 30px;
-    background: blue;
 }
 
 .cell {
     float: left;
-    width: 180px;
+    min-height: 150px;
+    margin-bottom: 30px;
+    background: blue;
     margin-right: 30px;
-}
-
-footer {
-    clear: both;
 }
 
 .cell:last-of-type {
     margin-right: 0;
+}
+
+.col-1 {
+    width: 180px;
+}
+
+.col-2 {
+    width: 390px;
+}
+
+.col-3 {
+    width: 100%;
 }
