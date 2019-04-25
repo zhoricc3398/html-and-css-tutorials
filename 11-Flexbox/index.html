@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,27 +8,36 @@
     <title>11. Flexbox</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <main>
         <div class="row">
-            <div class="col-3"></div>
+            <div class="col-3 cell"></div>
         </div>
         <div class="row">
-            <div class="col-1"></div>
-            <div class="col-1"></div>
-            <div class="col-1"></div>
+            <div class="col-2 multi">
+                <div class="row">
+                    <div class="col-1 cell"></div>
+                    <div class="col-1 cell"></div>
+                </div>
+                <div class="row">
+                    <div class="col-2 cell"></div>
+                </div>
+            </div>
+            <div class="col-1">
+                <div class="row">
+                    <div class="col-1 cell"></div>
+                </div>
+            </div>
         </div>
         <div class="row">
-            <div class="col-2"></div>
-            <div class="col-1"></div>
+            <div class="col-1 cell"></div>
+            <div class="col-2 cell"></div>
         </div>
         <div class="row">
-            <div class="col-1"></div>
-            <div class="col-2"></div>
-        </div>
-        <div class="row">
-            <div class="col-3"></div>
+            <div class="col-3 cell"></div>
         </div>
     </main>
 </body>
+
 </html>
