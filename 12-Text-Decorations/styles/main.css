@@ -10,7 +10,7 @@ body {
 }
 
 main {
-    width: 680px;
+    width: 688px;
     margin: 150px auto 0;
 }
 
@@ -30,7 +30,8 @@ article .poster {
 article header {
     border-bottom: solid 1px #ECF0F1;
     padding-bottom: 5px;
-    margin-bottom: 16px;
+    margin-bottom: 10px;
+    height: 80px;
 }
 
 article header h1 {
@@ -38,6 +39,7 @@ article header h1 {
     font-size: 24px;
     line-height: 30px;
     color: #21C2F8;
+    margin-bottom: 5px;
 }
 
 article header p {
@@ -53,8 +55,8 @@ article header p span::after {
     width: 1px;
     height: 12px;
     background-color: #EBEBEB;
-    margin-right: 13px;
-    margin-left: 13px;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
 article header p span:last-child::after {
@@ -62,14 +64,15 @@ article header p span:last-child::after {
 }
 
 article .content .text {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 article .content .text p {
     font-family: 'PT Sans';
     font-size: 14px;
-    line-height: 24px;
+    line-height: 25px;
     color: #A1B1BC;
+    word-spacing: -1px;
 }
 
 article .content a {
