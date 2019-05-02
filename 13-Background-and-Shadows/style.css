@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+@font-face {
+    font-family: 'Lobster';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Lobster Regular'), local('Lobster-Regular'), url(fonts/Lobster.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+section {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(images/background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section::before {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,81) 37%, rgba(0,0,0,67) 55%, rgba(0,0,0,0) 100%);
+    opacity: 0.85;
+}
+
+section::after {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: #140E0E;
+    opacity: 0.13;
+    top: 0;
+}
+
+section h1 {
+    font-family: 'Lobster';
+    font-size: 187px;
+    line-height: 250px;
+    color: #FFF;
+    z-index: 1;
+    position: relative;
+    margin-top: 109px;
+    margin-left: 257px;
+    letter-spacing: 7px;
+}
