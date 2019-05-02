@@ -21,13 +21,20 @@ section {
     position: relative;
     width: 100vw;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section > div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
     background-image: url(images/background.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    filter: blur(16px)
 }
 
 section::before {
@@ -38,6 +45,7 @@ section::before {
     height: 100%;
     background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,81) 37%, rgba(0,0,0,67) 55%, rgba(0,0,0,0) 100%);
     opacity: 0.85;
+    z-index: 2;
 }
 
 section::after {
@@ -49,16 +57,14 @@ section::after {
     background: #140E0E;
     opacity: 0.13;
     top: 0;
+    z-index: 1;
 }
 
 section h1 {
     font-family: 'Lobster';
-    font-size: 187px;
+    font-size: 200px;
     line-height: 250px;
     color: #FFF;
-    z-index: 1;
+    z-index: 3;
     position: relative;
-    margin-top: 109px;
-    margin-left: 257px;
-    letter-spacing: 7px;
 }
