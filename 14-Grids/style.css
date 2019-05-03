@@ -5,8 +5,8 @@
 }
 
 section {
-    width: 900px;
-    height: 450px;
+    width: 600px;
+    height: 600px;
     margin: 50px auto 0;
     display: grid;
     grid-gap: 30px;
@@ -16,10 +16,10 @@ section div {
     background-color: teal;
 }
 
-.header {
-    grid-column: 1/4;
+.col-2 {
+    grid-column: span 2;
 }
 
-.footer {
-    grid-column: 1/4;
+.col-3 {
+    grid-column: span 3;
 }
