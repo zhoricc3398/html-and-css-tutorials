@@ -9,21 +9,42 @@ section {
     height: 600px;
     margin: 50px auto 0;
     display: grid;
-    grid-gap: 30px;
+    grid-gap: 3px;
+    grid-template-areas: "header haeder header"
+                         "menu menu sidebar"
+                         "content-left content-right sidebar"
+                         "content-bottom footer footer";
+    grid-template-rows: 30px 100px repeat(2, 150px);
 }
 
 section div {
     background-color: teal;
 }
 
-.col-2 {
-    grid-column: span 2;
+.header {
+    grid-area: header;
 }
 
-.col-3 {
-    grid-column: span 3;
+.menu {
+    grid-area: menu;
 }
 
-.row-2 {
-    grid-row: span 2;
+.sidebar {
+    grid-area: sidebar;
+}
+
+.content-left {
+    grid-area: content-left;
+}
+
+.content-right {
+    grid-area: content-right;
+}
+
+.content-bottom {
+    grid-area: content-bottom;
+}
+
+.footer {
+    grid-area: footer;
 }
